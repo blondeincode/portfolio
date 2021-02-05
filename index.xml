@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magdalena Bienias</title>
+    <link>https://blondeincode.github.io/portfolio/</link>
+    <description>Recent content on Magdalena Bienias</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blondeincode.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analysis of an anonymized sample of the National Health Fund data on the occurrence of ischemic stroke</title>
+      <link>https://blondeincode.github.io/portfolio/posts/project2/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blondeincode.github.io/portfolio/posts/project2/</guid>
+      <description>Data was downloaded from the website dane.gov.pl The National Health Fund has reporting data provided by medical entities. The dataset concerns reimbursed services and medications for patients, some of whom have suffered from ischemic stroke. The collection was prepared in such a way that the data on services and medications come from the period of two years (t, t + 1), while the information on the occurrence of a stroke concerns the period of the next two years (t + 2, t + 3).</description>
+    </item>
+    
+    <item>
+      <title>Sentiment analysis and search for the most frequently used words in Donald Trump&#39;s tweets in 2017-2020</title>
+      <link>https://blondeincode.github.io/portfolio/posts/project1/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blondeincode.github.io/portfolio/posts/project1/</guid>
+      <description>Project Overview  the data has been downloaded from the website www.thetrumparchive.com; the analysis was conducted on tweets published from January 20, 2017 to December 31, 2020; only tweets in English were analyzed; sentiment analysis was carried out using the TextBlob library; the thematic modeling was performed with the Latent Dirichlet Allocation (LDA).  After retrieving the data, I had to clean it to make it usable for analysis. I made the following changes and created the following variables:</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://blondeincode.github.io/portfolio/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blondeincode.github.io/portfolio/about/</guid>
+      <description>Hi. My name is Magdalena Bienias. I graduated with a bachelor&amp;rsquo;s degree in mathematics at the Cardinal Stefan Wyszyński University in Warsaw. I am currently in the second year of master&amp;rsquo;s studies in big data management at the University of Warsaw. In the future, I want to deal with data analysis professionally. I have carried out my projects so far as part of my studies or as a hobby. I am looking for an internship that would help me develop in this direction.</description>
+    </item>
+    
+    <item>
+      <title>Contact me</title>
+      <link>https://blondeincode.github.io/portfolio/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blondeincode.github.io/portfolio/contact/</guid>
+      <description> Have questions or suggestions? Feel free to contact me:
+   Platform URL     e-mail: magda199711@gmail.com   LinkedIn: https://www.linkedin.com/in/m-bienias-313n1a5/?locale=en_US   GitHub: https://github.com/blondeincode    </description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://blondeincode.github.io/portfolio/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blondeincode.github.io/portfolio/projects/</guid>
+      <description>Sentiment analysis and search for the most frequently used words in Donald Trump&amp;rsquo;s tweets in 2017-2020.
+Project Overview
+ the data has been downloaded from the website www.thetrumparchive.com; the analysis was conducted on tweets published from January 20, 2017 to December 31, 2020; only tweets in English were analyzed; sentiment analysis was carried out using the TextBlob library; the thematic modeling was performed with the Latent Dirichlet Allocation (LDA).  After retrieving the data, I had to clean it to make it usable for analysis.</description>
+    </item>
+    
+  </channel>
+</rss>

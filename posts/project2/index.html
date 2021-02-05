@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Magdalena Bienias">
+    <meta name="description" content="https://blondeincode.github.io/portfolio/">
+    <meta name="keywords" content="data analysis,projects,big data,python">
+
+    <meta property="og:site_name" content="Magdalena Bienias">
+    <meta property="og:title" content="
+  Analysis of an anonymized sample of the National Health Fund data on the occurrence of ischemic stroke - Magdalena Bienias
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blondeincode.github.io/portfolio/posts/project2/">
+    <meta property="og:image" content="https://blondeincode.github.io/portfolio/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://blondeincode.github.io/portfolio/posts/project2/">
+    <meta name="twitter:image" content="https://blondeincode.github.io/portfolio/">
+
+    <base href="https://blondeincode.github.io/portfolio/posts/project2/">
+    <title>
+  Analysis of an anonymized sample of the National Health Fund data on the occurrence of ischemic stroke - Magdalena Bienias
+</title>
+
+    <link rel="canonical" href="https://blondeincode.github.io/portfolio/posts/project2/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="https://blondeincode.github.io/portfolio/css/normalize.min.css">
+    <link rel="stylesheet" href="https://blondeincode.github.io/portfolio/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://blondeincode.github.io/portfolio/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://blondeincode.github.io/portfolio/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://blondeincode.github.io/portfolio/index.xml" type="application/rss+xml" title="Magdalena Bienias">
+      <link href="https://blondeincode.github.io/portfolio/index.xml" rel="feed" type="application/rss+xml" title="Magdalena Bienias" />
+    
+
+    <meta name="generator" content="Hugo 0.80.0" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://blondeincode.github.io/portfolio/">Magdalena Bienias</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blondeincode.github.io/portfolio/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blondeincode.github.io/portfolio/contact">Contact</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blondeincode.github.io/portfolio/posts">Projects</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://blondeincode.github.io/portfolio/pl/">Polish</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Analysis of an anonymized sample of the National Health Fund data on the occurrence of ischemic stroke</h1>
+      <h2 class="date">February 5, 2021</h2>
+
+      
+    </header>
+
+    <hr>
+<h3 id="data-was-downloaded-from-the-website-danegovplhttpsdanegovplpldataset1711zanonimizowana-probka-danych-nfz-dotyczaca-wystapienia-udaru-niedokrwiennego-mozgu">Data was downloaded from the website <a href="https://dane.gov.pl/pl/dataset/1711,zanonimizowana-probka-danych-nfz-dotyczaca-wystapienia-udaru-niedokrwiennego-mozgu">dane.gov.pl</a></h3>
+<p>The National Health Fund has reporting data provided by medical entities. The dataset concerns reimbursed services and medications for patients, some of whom have suffered from ischemic stroke. The collection was prepared in such a way that the data on services and medications come from the period of two years (t, t + 1), while the information on the occurrence of a stroke concerns the period of the next two years (t + 2, t + 3). The provided data set consists of 6 tables containing actual, anonymised data of the National Health Fund. The &ldquo;patients&rdquo; table (500,000 IDs) contains data defining whether a patient had an ischemic stroke over the two-year period under review. In order to ensure anonymization of the data, it was not stated what period the data came from. The remaining tables contain information on the history of services and the fulfillment of prescriptions for patients in the table &ldquo;patients&rdquo; from the previous two years.</p>
+<h3 id="description-of-individual-tables">Description of individual tables:</h3>
+<ol>
+<li>
+<p>patients - information on the occurrence of first-time ischemic stroke in the analyzed time period (2 years). Patients who experienced ischemic stroke before the analyzed time interval were excluded from the analysis. It consists of the following columns:</p>
+<p>a) PATIENT_ID - unique identifier of the patient.</p>
+<p>b) WAS_THERE_A_STROKE? - binary information on whether a disease entity under analysis occurs in the case of a person with a given identifier.</p>
+</li>
+<li>
+<p>health_benefits - information on the benefits provided. It consists of the following columns:</p>
+<p>a) PATIENT_ID - unique identifier of the patient.</p>
+<p>b) EPISODE_ID - episode identifier allowing to combine services with procedures.</p>
+<p>c) CONTACT_ID - identifier allowing to combine services with diagnoses.</p>
+<p>d) RANGE_CODE - anonymized code of the scope of the service.</p>
+<p>e) TYPE_OF_SERVICES - a text variable that defines the type of the place where the service is provided (hospital treatment, primary healthcare, emergency medical services, etc.).</p>
+<p>f) SETTLED_AMOUNT - the amount that the fund paid to the entity for the service provided. In the case of benefits settled under the capitalization rate or as a lump sum, this amount is 0.</p>
+</li>
+<li>
+<p>procedures - a table containing information on medical procedures performed. It consists of the following columns:</p>
+<p>a) EPISODE_ID - ID of the episode allowing to combine services with procedures.</p>
+<p>b) CODE_PROCEDURES - anonymised code of the procedure according to the ICD-9 classification.</p>
+</li>
+<li>
+<p>prescriptions - the table contains information on completed prescriptions for reimbursed drugs:</p>
+<p>a) PATIENT_ID - unique identifier of the patient.</p>
+<p>b) PRESCRIPTION_ID - prescription ID.</p>
+<p>c) NUMBER_OF_PACKAGES - the purchased number of packages of a drug with a given ATC code (3 code characters according to the anatomical-therapeutic-chemical classification).</p>
+</li>
+<li>
+<p>diagnosis - the table contains information on the reported diagnoses according to the ICD-10 classification:</p>
+<p>a) CONTACT_ID - identifier that allows you to combine services with diagnoses.</p>
+<p>b) DIAGNOSIS_CODE - encrypted recognition code according to the International Classification of Diseases and Health Problems ICD10. The original code may consist of 3 or 5 characters, which makes the diagnosis more detailed.</p>
+<p>c) IS_THIS_THE_MAIN_DIAGNOSIS? - binary variable with levels &lsquo;N&rsquo; - coexisting recognition and &lsquo;T&rsquo; - main recognition.</p>
+</li>
+<li>
+<p>patient_parameters - the table contains information about patient parameters:</p>
+<p>a) PATIENT_ID - unique identifier of the patient.</p>
+<p>b) AGE_GROUP - patient&rsquo;s age presented in five-year age ranges.</p>
+<p>c) GENDER - patient&rsquo;s gender.</p>
+<p>d) DISTRICT_TERRITORY - the territorial code of the patient&rsquo;s place of residence, presented to the poviat level.</p>
+</li>
+</ol>
+<h3 id="the-analysis-was-conducted-in-order-to-answer-the-following-questions">The analysis was conducted in order to answer the following questions:</h3>
+<ul>
+<li>How many unique patients and for what total amount have dental services been used?</li>
+<li>How many patients received dental treatment?</li>
+<li>What was the settled amount for all patients who received dental treatment?</li>
+<li>What unique diagnoses were diagnosed in patients settled by the range code 3103275?</li>
+<li>How many unique episodes do patients who have not been diagnosed with a stroke have in their history?</li>
+<li>How many drug packages were issued in total?</li>
+<li>What percentage are patients who have been diagnosed with a stroke?</li>
+<li>How many patients in each age group have had a stroke?</li>
+<li>How many patients in each age group have not had a stroke?</li>
+<li>What was the gender breakdown of patients diagnosed with a stroke?</li>
+<li>What was the gender breakdown of patients not diagnosed with a stroke?</li>
+<li>How many patients have been diagnosed with a stroke according to the district territory code?</li>
+<li>Which health services were used by patients diagnosed with a stroke?</li>
+<li>How many patients diagnosed with stroke benefited from each health service?</li>
+<li>Was the diagnosis a primary one or a concomitant diagnosis?</li>
+</ul>
+<hr>
+<h3 id="links">Links:</h3>
+<p><a href="https://github.com/blondeincode/Analysis_of_stroke_occurrences">GitHub repository</a></p>
+<p>There are two files in this repository:</p>
+<ul>
+<li>
+<p><a href="https://colab.research.google.com/drive/1Yn3vBmymkZj0rSCD8Wj-bvJQcAw2ehXn?usp=sharing">Analysis_of_stroke_occurrences(plotly_visualizations).ipynb - Link to Google Colab</a></p>
+</li>
+<li>
+<p><a href="https://colab.research.google.com/drive/1eZ4wrMlIC0K01a2RsZx-hbGxfjPHrADM?usp=sharing">Analysis_of_stroke_occurrences(matplotlib_visualizations).ipynb - Link to Google Colab</a></p>
+</li>
+</ul>
+<hr>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+    
+      <div class="sns-shares sp-sns-shares">
+        
+        
+        
+        
+        
+      </div>
+    
+    
+      <p>Enter a text here.</p>
+    
+     © 2021    ·  Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/naro143/hugo-coder-portfolio">CoderPortfolio</a>. 
+
+  </section>
+</footer>
+<div class="fixed-bar">
+  <section class="container">
+    
+    
+      <div class="sns-shares pc-sns-shares">
+        
+        
+        
+        
+        
+      </div>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="https://blondeincode.github.io/portfolio/js/app.js"></script>
+  
+  </body>
+</html>

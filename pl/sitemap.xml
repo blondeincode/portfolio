@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blondeincode.github.io/portfolio/pl/posts/project2/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blondeincode.github.io/portfolio/posts/project2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://blondeincode.github.io/portfolio/pl/posts/project2/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blondeincode.github.io/portfolio/pl/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blondeincode.github.io/portfolio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://blondeincode.github.io/portfolio/pl/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blondeincode.github.io/portfolio/pl/posts/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blondeincode.github.io/portfolio/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://blondeincode.github.io/portfolio/pl/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blondeincode.github.io/portfolio/pl/posts/project1/</loc>
+    <lastmod>2021-01-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blondeincode.github.io/portfolio/posts/project1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://blondeincode.github.io/portfolio/pl/posts/project1/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blondeincode.github.io/portfolio/pl/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blondeincode.github.io/portfolio/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://blondeincode.github.io/portfolio/pl/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blondeincode.github.io/portfolio/pl/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blondeincode.github.io/portfolio/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://blondeincode.github.io/portfolio/pl/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blondeincode.github.io/portfolio/pl/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blondeincode.github.io/portfolio/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://blondeincode.github.io/portfolio/pl/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blondeincode.github.io/portfolio/pl/projects/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blondeincode.github.io/portfolio/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://blondeincode.github.io/portfolio/pl/projects/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blondeincode.github.io/portfolio/pl/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blondeincode.github.io/portfolio/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://blondeincode.github.io/portfolio/pl/tags/"
+                />
+  </url>
+  
+</urlset>
