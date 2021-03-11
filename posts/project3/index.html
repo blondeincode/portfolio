@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Magdalena Bienias">
+    <meta name="description" content="https://blondeincode.github.io/portfolio/">
+    <meta name="keywords" content="data analysis,projects,big data,python">
+
+    <meta property="og:site_name" content="Magdalena Bienias">
+    <meta property="og:title" content="
+  Telco customer churn modelling - Magdalena Bienias
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blondeincode.github.io/portfolio/posts/project3/">
+    <meta property="og:image" content="https://blondeincode.github.io/portfolio/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://blondeincode.github.io/portfolio/posts/project3/">
+    <meta name="twitter:image" content="https://blondeincode.github.io/portfolio/">
+
+    <base href="https://blondeincode.github.io/portfolio/posts/project3/">
+    <title>
+  Telco customer churn modelling - Magdalena Bienias
+</title>
+
+    <link rel="canonical" href="https://blondeincode.github.io/portfolio/posts/project3/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="https://blondeincode.github.io/portfolio/css/normalize.min.css">
+    <link rel="stylesheet" href="https://blondeincode.github.io/portfolio/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://blondeincode.github.io/portfolio/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://blondeincode.github.io/portfolio/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://blondeincode.github.io/portfolio/index.xml" type="application/rss+xml" title="Magdalena Bienias">
+      <link href="https://blondeincode.github.io/portfolio/index.xml" rel="feed" type="application/rss+xml" title="Magdalena Bienias" />
+    
+
+    <meta name="generator" content="Hugo 0.80.0" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://blondeincode.github.io/portfolio/">Magdalena Bienias</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blondeincode.github.io/portfolio/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blondeincode.github.io/portfolio/contact">Contact</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blondeincode.github.io/portfolio/posts">Projects</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://blondeincode.github.io/portfolio/pl/">Polish</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Telco customer churn modelling</h1>
+      <h2 class="date">March 11, 2021</h2>
+
+      
+    </header>
+
+    <hr>
+<p>Analysis of the factors that could have an impact on customer churn from the telecom operator.
+An attempt to predict which customers may opt out of the telecommunications operator&rsquo;s services.</p>
+<h2 id="project-overview">Project Overview</h2>
+<ul>
+<li>generated a basic report on the input data frame using pandas_profiling;</li>
+<li>missing data in the &lsquo;TotalCharges&rsquo; column have been supplemented with the median value in this column;</li>
+<li>data visualizations were created;</li>
+<li>data was divided into training data (70%) and testing data (30%);</li>
+<li>the following machine learning methods were tested: logistic regression, support vector machine, random forest, k-nearest neighbor, decision tree;</li>
+<li>churn probability for each client was calculated.</li>
+</ul>
+<h2 id="data-was-downloaded-from-the-website-kagglecomhttpswwwkagglecomblastchartelco-customer-churn">Data was downloaded from the website <a href="https://www.kaggle.com/blastchar/telco-customer-churn">kaggle.com</a></h2>
+<p><strong>Description of the churn set</strong>:</p>
+<ul>
+<li>customerID - customer identification number</li>
+<li>gender - gender</li>
+<li>SeniorCitizen - is it an elderly person</li>
+<li>Partner - does he have a partner</li>
+<li>Dependents - does it have any dependencies</li>
+<li>tenure - how many months are there already with this operator</li>
+<li>PhoneService - does it have a telephone?</li>
+<li>MultipleLines - Whether it has multiple phone numbers</li>
+<li>InternetService - does it have internet</li>
+<li>OnlineSecurity - Does it have an online security service</li>
+<li>OnlineBackup - Does it have an online data backup service</li>
+<li>DeviceProtection - Whether it has a phone security service</li>
+<li>TechSupport - does it have a technical support service</li>
+<li>StreamingTV - does it have a TV streaming option</li>
+<li>StreamingMovies - Does it have a streaming movie option</li>
+<li>Contract - whether it has a fixed-term (one or 2-year) or an indefinite (month-to-month) contract</li>
+<li>PaperlessBilling - e-invoice</li>
+<li>PaymentMethod - payment method</li>
+<li>MonthlyCharges - monthly fees</li>
+<li>TotalCharges - total amount of fees</li>
+<li>churn - whether the client has left or not</li>
+</ul>
+<h3 id="machine-learning-algorithms-used-and-their-prediction-accuracy">Machine learning algorithms used and their prediction accuracy</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Logistic Regression</td>
+<td>80.03</td>
+</tr>
+<tr>
+<td>Support Vector Machine</td>
+<td>79.37</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>78.75</td>
+</tr>
+<tr>
+<td>K-Nearest Neighbor</td>
+<td>76.43</td>
+</tr>
+<tr>
+<td>Decision Tree</td>
+<td>72.36</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="links">Links:</h3>
+<p><a href="https://github.com/blondeincode/Telco_customer_churn_modelling">GitHub repository</a></p>
+<p>File in the repository:</p>
+<ul>
+<li><a href="https://colab.research.google.com/drive/10ELabo1NzDpm4T-jXnS9757lbKW2W3Gi?usp=sharing">Telco_Customer_Churn_Modelling.ipynb - Link to Google Colab</a></li>
+</ul>
+<hr>
+
+  </article>
+
+  <br/>
+
+  
+  
+</section>
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+    
+      <div class="sns-shares sp-sns-shares">
+        
+        
+        
+        
+        
+      </div>
+    
+    
+      <p>magda199711@gmail.com</p>
+    
+     © 2021    ·  Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/naro143/hugo-coder-portfolio">CoderPortfolio</a>. 
+
+  </section>
+</footer>
+<div class="fixed-bar">
+  <section class="container">
+    
+    
+      <div class="sns-shares pc-sns-shares">
+        
+        
+        
+        
+        
+      </div>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="https://blondeincode.github.io/portfolio/js/app.js"></script>
+  
+  </body>
+</html>
