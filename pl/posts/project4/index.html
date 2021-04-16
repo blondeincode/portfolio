@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="Magdalena Bienias">
-    <meta name="description" content="portfolio Magdaleny Bienias">
+    <meta name="description" content="https://blondeincode.github.io/portfolio/">
     <meta name="keywords" content="data analysis,projects,big data,python">
 
     <meta property="og:site_name" content="Magdalena Bienias">
     <meta property="og:title" content="
-  Posts - Magdalena Bienias
+  Predykcja cen kryptowalut - Magdalena Bienias
 ">
-    <meta property="og:description" content="portfolio Magdaleny Bienias">
+    <meta property="og:description" content="">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blondeincode.github.io/portfolio/pl/posts/">
-    <meta property="og:image" content="https://blondeincode.github.io/portfolio/images/tn.png">
+    <meta property="og:url" content="https://blondeincode.github.io/portfolio/pl/posts/project4/">
+    <meta property="og:image" content="https://blondeincode.github.io/portfolio/">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="https://blondeincode.github.io/portfolio/pl/posts/">
-    <meta name="twitter:image" content="https://blondeincode.github.io/portfolio/images/tn.png">
+    <meta name="twitter:site" content="https://blondeincode.github.io/portfolio/pl/posts/project4/">
+    <meta name="twitter:image" content="https://blondeincode.github.io/portfolio/">
 
-    <base href="https://blondeincode.github.io/portfolio/pl/posts/">
+    <base href="https://blondeincode.github.io/portfolio/pl/posts/project4/">
     <title>
-  Posts - Magdalena Bienias
+  Predykcja cen kryptowalut - Magdalena Bienias
 </title>
 
-    <link rel="canonical" href="https://blondeincode.github.io/portfolio/pl/posts/">
+    <link rel="canonical" href="https://blondeincode.github.io/portfolio/pl/posts/project4/">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
@@ -107,36 +107,60 @@
 
       <div class="content">
         
-  <section class="container list">
-  <h1 class="title">Posts</h1>
-  <ul>
-    
-    <li>
-      <span>April 14, 2021</span><a href="https://blondeincode.github.io/portfolio/pl/posts/project4/">Predykcja cen kryptowalut</a>
-    </li>
-    
-    <li>
-      <span>March 11, 2021</span><a href="https://blondeincode.github.io/portfolio/pl/posts/project3/">Analiza odejścia klientów telekomunikacyjnych</a>
-    </li>
-    
-    <li>
-      <span>February 5, 2021</span><a href="https://blondeincode.github.io/portfolio/pl/posts/project2/">Analiza anonimowej próbki danych NFZ o wystąpieniu udaru niedokrwiennego</a>
-    </li>
-    
-    <li>
-      <span>January 4, 2021</span><a href="https://blondeincode.github.io/portfolio/pl/posts/project1/">Analiza sentymentu i wyszukiwanie najczęściej używanych słów w tweetach Donalda Trumpa</a>
-    </li>
-    
-  </ul>
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Predykcja cen kryptowalut</h1>
+      <h2 class="date">April 14, 2021</h2>
+
+      
+    </header>
+
+    <hr>
+<h3 id="predykcja-cen-wybranych-kryptowalut-z-wykorzystaniem-modelu-arima">Predykcja cen wybranych kryptowalut z wykorzystaniem modelu ARIMA.</h3>
+<h3 id="kryptowaluty-które-zostały-przeanalizowane">Kryptowaluty, które zostały przeanalizowane:</h3>
+<ul>
+<li>Bitcoin,</li>
+<li>Więcej zostanie dodanych wkrótce.</li>
+</ul>
+<h3 id="project-overview">Project Overview</h3>
+<p><strong>ARIMA</strong> (<em>Automatyczna regresywna zintegrowana średnia krocząca</em>) to połączenie 2 modeli: AR (<em>Autoregresja</em>) oraz MA (<em>Średnia krocząca</em>). <!-- raw HTML omitted -->
+Posiada 3 hiperparametry:</p>
+<ul>
+<li>p (opóźnienia autoregresyjne)</li>
+<li>d (kolejność różnicowania)</li>
+<li>q (średnia krocząca) <!-- raw HTML omitted --></li>
+</ul>
+<p>które pochodzą odpowiednio z elementów AR, I i MA. <!-- raw HTML omitted --><!-- raw HTML omitted -->
+Część AR to korelacja między poprzednimi i obecnymi okresami czasu. Aby wygładzić szum, używana jest część MA. <!-- raw HTML omitted -->
+Część I łączy ze sobą części AR i MA.</p>
+<p>Jeśli chcemy znaleźć wartości P i Q dla modelu ARIMA, musimy wykonać wykresy <strong>ACF</strong> (<em>Funkcja autokorelacji</em>) i <strong>PACF</strong>
+(<em>Funkcja częściowej autokorelacji</em>).
+Następnie należy sprawdzić, dla jakiej wartości na osi x linia wykresu przecina 0 na osi y po raz pierwszy.</p>
+<ul>
+<li>Z PACF (dla y = 0) weź P.</li>
+<li>Z ACF (dla y = 0) weź Q.</li>
+</ul>
+<p>Test <strong>ADF</strong> (<em>Augmented Dickey – Fuller</em>) sprawdza hipotezę zerową, zgodnie z którą pierwiastek jednostkowy występuje
+w próbce szeregu czasowego. Hipoteza alternatywna jest różna w zależności od używanej wersji testu,
+ale zwykle jest to stacjonarność lub stacjonarność trendu. Jest to rozszerzona wersja testu Dickeya-Fullera
+dla większego i bardziej skomplikowanego zestawu modeli szeregów czasowych. Zwiększona statystyka Dickeya Fullera,
+użyta w teście, jest liczbą ujemną. Im bardziej jest to negatywne, tym silniejsze jest odrzucenie hipotezy, że istnieje
+pierwiastek jednostkowy na pewnym poziomie ufności.</p>
+<p>Wartość p (gdzie 0 ≤ p ≤ 1) powinna być jak najmniejsza. Wartości krytyczne w różnych przedziałach ufności powinny być zbliżone do wartości statystyki testu.</p>
+<hr>
+<h3 id="linki">Linki:</h3>
+<p><a href="https://github.com/blondeincode/Cryptocurrency_price_prediction_ARIMA_model">Repozytorium GitHub</a></p>
+<p><a href="https://colab.research.google.com/github/blondeincode/Cryptocurrency_price_prediction_ARIMA_model/blob/main/Bitcoin_price_prediction_ARIMA_model.ipynb">Otwórz w Google Colab</a></p>
+<hr>
+
+  </article>
+
+  <br/>
+
   
-
-
-
-
-
-
+  
 </section>
-
 
       </div>
       

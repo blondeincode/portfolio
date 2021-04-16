@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Magdalena Bienias</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blondeincode.github.io/portfolio/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blondeincode.github.io/portfolio/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cryptocurrency price prediction</title>
+      <link>https://blondeincode.github.io/portfolio/posts/project4/</link>
+      <pubDate>Wed, 14 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blondeincode.github.io/portfolio/posts/project4/</guid>
+      <description>Prediction of prices of selected cryptocurrencies using the ARIMA model. Cryptocurrencies that have been analyzed:  Bitcoin, More will be released soon.  Project Overview ARIMA (Auto Regressive Integrated Moving Average) is a combination of 2 models: AR (Auto Regressive) and MA (Moving Average). It has 3 hyperparameters:
+ p (auto regressive lags) d (order of differentiation) q (moving average)   which respectively comes from the AR, I and MA components.</description>
+    </item>
+    
     <item>
       <title>Telco customer churn modelling</title>
       <link>https://blondeincode.github.io/portfolio/posts/project3/</link>
@@ -18,7 +28,7 @@ Project Overview  generated a basic report on the input data frame using pandas_
     </item>
     
     <item>
-      <title>Analysis of an anonymized sample of the National Health Fund data on the occurrence of ischemic stroke</title>
+      <title>Analysis of the National Health Fund data on the occurrence of ischemic stroke</title>
       <link>https://blondeincode.github.io/portfolio/posts/project2/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
@@ -27,7 +37,7 @@ Project Overview  generated a basic report on the input data frame using pandas_
     </item>
     
     <item>
-      <title>Sentiment analysis and search for the most frequently used words in Donald Trump&#39;s tweets in 2017-2020</title>
+      <title>Sentiment analysis and search for the most frequently used words in Donald Trump&#39;s tweets</title>
       <link>https://blondeincode.github.io/portfolio/posts/project1/</link>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
       

@@ -6,9 +6,19 @@
     <description>Recent content in Posts on Magdalena Bienias</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pl</language>
-    <lastBuildDate>Thu, 11 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blondeincode.github.io/portfolio/pl/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blondeincode.github.io/portfolio/pl/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Analiza i próba predykcji, którzy klienci mogą zrezygnować z usług operatora telekomunikacyjnego</title>
+      <title>Predykcja cen kryptowalut</title>
+      <link>https://blondeincode.github.io/portfolio/pl/posts/project4/</link>
+      <pubDate>Wed, 14 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blondeincode.github.io/portfolio/pl/posts/project4/</guid>
+      <description>Predykcja cen wybranych kryptowalut z wykorzystaniem modelu ARIMA. Kryptowaluty, które zostały przeanalizowane:  Bitcoin, Więcej zostanie dodanych wkrótce.  Project Overview ARIMA (Automatyczna regresywna zintegrowana średnia krocząca) to połączenie 2 modeli: AR (Autoregresja) oraz MA (Średnia krocząca). Posiada 3 hiperparametry:
+ p (opóźnienia autoregresyjne) d (kolejność różnicowania) q (średnia krocząca)   które pochodzą odpowiednio z elementów AR, I i MA. Część AR to korelacja między poprzednimi i obecnymi okresami czasu.</description>
+    </item>
+    
+    <item>
+      <title>Analiza odejścia klientów telekomunikacyjnych</title>
       <link>https://blondeincode.github.io/portfolio/pl/posts/project3/</link>
       <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
       
@@ -27,7 +37,7 @@ Przegląd projektu  wygenerowanie podstawowego raportu na temat danych wejściow
     </item>
     
     <item>
-      <title>Analiza sentymentu i wyszukiwanie najczęściej używanych słów w tweetach Donalda Trumpa w latach 2017-2020</title>
+      <title>Analiza sentymentu i wyszukiwanie najczęściej używanych słów w tweetach Donalda Trumpa</title>
       <link>https://blondeincode.github.io/portfolio/pl/posts/project1/</link>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
       
